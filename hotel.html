@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel | mellow Pet Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" aria-label="サイトヘッダー">
+    <a class="site-header__logo-link" href="index.html" aria-label="mellow トップページ">
+      <img class="site-header__logo" src="assets/images/common/mellow_logo_v2.png" alt="mellow">
+    </a>
+    <nav class="site-header__nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="salon.html">Salon</a>
+      <a href="hotel.html">Hotel</a>
+      <a href="reservation.html">Reservation</a>
+    </nav>
+    <button class="hamburger-button" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+      <span class="hamburger-button__line"></span>
+      <span class="hamburger-button__line"></span>
+      <span class="hamburger-button__line"></span>
+    </button>
+  </header>
+
+  <div class="sp-menu" id="sp-menu" aria-hidden="true">
+    <div class="sp-menu__inner">
+      <div class="sp-menu__header">
+        <a href="index.html" aria-label="mellow トップページ">
+          <img class="sp-menu__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+        </a>
+        <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">×</button>
+      </div>
+      <nav class="sp-menu__nav" aria-label="スマートフォンナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a class="sp-menu__reservation" href="reservation.html">Reservation</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero hero--page hero--hotel" aria-label="Hotel">
+      <h1 class="hero__title">Hotel</h1>
+    </section>
+
+    <section class="section section--hotel-intro" aria-labelledby="hotel-intro-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title">
+          <p class="section-title__en">Pet hotel</p>
+          <h2 class="section-title__jp" id="hotel-intro-title">ペットホテル</h2>
+        </div>
+        <div class="hotel-intro__layout">
+          <div class="hotel-intro__text">
+            <div class="hotel-intro__body">
+              <p>mellowのホテルは、<br>日帰りの一時預かりから宿泊まで対応した、<br>ワンちゃんのためのお預かりサービスです。</p>
+              <p>飼い主さまのお出かけやお仕事、<br>急なご予定のときにも、<br>安心してお預けいただける場所を目指しています。</p>
+              <p>慣れない場所で過ごす時間は、<br>ワンちゃんにとって少し不安なもの。</p>
+              <p>だからこそmellowでは、<br>一頭一頭の性格や<br>普段の過ごし方に合わせて、<br>できるだけいつもの暮らしに近い、<br>穏やかな環境づくりを大切にしています。</p>
+              <p>日帰りで短時間だけ過ごす日も、<br>宿泊でゆっくり過ごす日も、<br>ワンちゃんが無理なく安心できるように。</p>
+              <p>ご家族にも安心して預けていただける、<br>家のように心地よい居場所を目指しています。</p>
+            </div>
+          </div>
+          <picture class="hotel-intro__picture">
+            <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Hotel_illust.png">
+            <img class="hotel-intro__image" src="assets/images/sp/hotel/Hotel_illust.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--course" aria-labelledby="hotel-course-title">
+      <div class="section__inner">
+        <div class="section-title">
+          <p class="section-title__en" id="hotel-course-title">Course</p>
+          <h2 class="section-title__jp">コース</h2>
+        </div>
+        <div class="course-list">
+          <article class="course-card">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Hotel_course01.png">
+              <img class="course-card__image" src="assets/images/sp/hotel/Hotel_course01.png" alt="">
+            </picture>
+            <div class="course-card__body">
+              <p class="course-card__number">Course 01</p>
+              <h3 class="course-card__title">ショートステイ</h3>
+              <p class="course-card__text">お買い物やちょっとした外出のあいだ、<br>短時間だけワンちゃんをお預かりするコースです。<br>初めてのご利用や、少しずつ場所に慣れたい<br>ワンちゃんにもおすすめです。</p>
+            </div>
+          </article>
+          <article class="course-card">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Hotel_course02.png">
+              <img class="course-card__image" src="assets/images/sp/hotel/Hotel_course02.png" alt="">
+            </picture>
+            <div class="course-card__body">
+              <p class="course-card__number">Course 02</p>
+              <h3 class="course-card__title">デイホテル</h3>
+              <p class="course-card__text">お仕事や日中のお出かけのあいだ、<br>営業時間内でゆったり過ごせる日帰りコースです。<br>スタッフが様子を見守りながら、<br>落ち着いて過ごせる時間を大切にします。</p>
+            </div>
+          </article>
+          <article class="course-card">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Hotel_course03.png">
+              <img class="course-card__image" src="assets/images/sp/hotel/Hotel_course03.png" alt="">
+            </picture>
+            <div class="course-card__body">
+              <p class="course-card__number">Course 03</p>
+              <h3 class="course-card__title">お泊まりホテル</h3>
+              <p class="course-card__text">旅行や出張などでおうちを離れるあいだ、<br>一晩からお預かりする宿泊コースです。<br>いつものごはんやお気に入りの持ち物と一緒に、<br>普段に近いリズムで過ごせるようサポートします。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--price" aria-labelledby="hotel-price-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title">
+          <p class="section-title__en" id="hotel-price-title">Price</p>
+          <h2 class="section-title__jp">料金</h2>
+        </div>
+        <div class="price-table-wrap">
+          <table class="price-table" aria-label="ペットホテル料金表">
+            <thead>
+              <tr>
+                <th scope="col">サイズ</th>
+                <th scope="col">ショートステイ</th>
+                <th scope="col">デイホテル</th>
+                <th scope="col">お泊まりホテル</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">小型犬</th>
+                <td>¥660 / 1時間</td>
+                <td>¥3,300 / 1日</td>
+                <td>¥5,500 / 1泊</td>
+              </tr>
+              <tr>
+                <th scope="row">中型犬</th>
+                <td>¥880 / 1時間</td>
+                <td>¥4,400 / 1日</td>
+                <td>¥6,600 / 1泊</td>
+              </tr>
+              <tr>
+                <th scope="row">大型犬</th>
+                <td>¥1,100 / 1時間</td>
+                <td>¥5,500 / 1日</td>
+                <td>¥7,700 / 1泊</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--hotel-notes" aria-labelledby="hotel-notes-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title">
+          <p class="section-title__en" id="hotel-notes-title">Notes</p>
+          <h2 class="section-title__jp">ご利用時のお願い</h2>
+        </div>
+        <div class="notes-card">
+          <ul class="notes-list">
+            <li>※料金は税込価格です。</li>
+            <li>※お預かり・お迎えは営業時間内にお願いいたします。</li>
+            <li>※初回ご利用時は、混合ワクチン・狂犬病予防接種証明書のご提示をお願いしております。</li>
+            <li>※体格や性格により、ご利用内容をご相談させていただく場合がございます。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flow section--hotel-flow" aria-labelledby="hotel-flow-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title">
+          <p class="section-title__en" id="hotel-flow-title">Flow</p>
+          <h2 class="section-title__jp">ご利用の流れ</h2>
+        </div>
+        <div class="flow-list">
+          <div class="flow-list__axis" aria-hidden="true">
+            <span class="flow-list__arrow flow-list__arrow--01"></span>
+            <span class="flow-list__arrow flow-list__arrow--02"></span>
+            <span class="flow-list__arrow flow-list__arrow--03"></span>
+            <span class="flow-list__arrow flow-list__arrow--04"></span>
+            <span class="flow-list__arrow flow-list__arrow--05"></span>
+          </div>
+          <article class="flow-item flow-item--right flow-item--step-01">
+            <div class="flow-item__icon-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Salon_flow01.png">
+                <img class="flow-item__icon" src="assets/images/sp/hotel/Salon_flow01.png" alt="">
+              </picture>
+            </div>
+            <div class="flow-item__body">
+              <p class="flow-item__number">01</p>
+              <h3 class="flow-item__title">ご予約</h3>
+              <p class="flow-item__text">Webまたはお電話にて、ご希望の日時とコースをお選びください。<br>一時預かり・宿泊のどちらもご相談いただけます。<br>持ち物やご不安な点があれば、事前にお気軽にお伝えください。</p>
+            </div>
+          </article>
+          <article class="flow-item flow-item--left flow-item--step-02">
+            <div class="flow-item__icon-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Salon_flow03_v2.png">
+                <img class="flow-item__icon" src="assets/images/sp/hotel/Salon_flow03_v2.png" alt="">
+              </picture>
+            </div>
+            <div class="flow-item__body">
+              <p class="flow-item__number">02</p>
+              <h3 class="flow-item__title">ご来店・受付</h3>
+              <p class="flow-item__text">ワンちゃんの体調や性格、<br>普段の過ごし方を確認します。<br>ごはんの時間や苦手なことなどもお聞かせください。<br>安心して過ごせるよう、<br>お預かり前に丁寧に確認します。</p>
+            </div>
+          </article>
+          <article class="flow-item flow-item--right flow-item--step-03">
+            <div class="flow-item__icon-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Salon_flow02_v2.png">
+                <img class="flow-item__icon" src="assets/images/sp/hotel/Salon_flow02_v2.png" alt="">
+              </picture>
+            </div>
+            <div class="flow-item__body">
+              <p class="flow-item__number">03</p>
+              <h3 class="flow-item__title">お預かり</h3>
+              <p class="flow-item__text">ワンちゃんの様子を見ながら、<br>落ち着ける環境でお預かりします。<br>初めての場所でも無理なく過ごせるよう、<br>一頭一頭のペースに合わせて<br>やさしく見守ります。</p>
+            </div>
+          </article>
+          <article class="flow-item flow-item--left flow-item--step-04">
+            <div class="flow-item__icon-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Hotel_flow04.png">
+                <img class="flow-item__icon" src="assets/images/sp/hotel/Hotel_flow04.png" alt="">
+              </picture>
+            </div>
+            <div class="flow-item__body">
+              <p class="flow-item__number">04</p>
+              <h3 class="flow-item__title">宿泊・見守り</h3>
+              <p class="flow-item__text">日帰りや宿泊の時間も、<br>できるだけ普段に近いリズムで過ごせるように。<br>ごはんや休憩の時間を大切にしながら、<br>ワンちゃんが穏やかに過ごせるよう<br>スタッフが見守ります。</p>
+            </div>
+          </article>
+          <article class="flow-item flow-item--right flow-item--step-05">
+            <div class="flow-item__icon-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/hotel/Salon_flow05.png">
+                <img class="flow-item__icon" src="assets/images/sp/hotel/Salon_flow05.png" alt="">
+              </picture>
+            </div>
+            <div class="flow-item__body">
+              <p class="flow-item__number">05</p>
+              <h3 class="flow-item__title">お迎え・お会計</h3>
+              <p class="flow-item__text">お迎え時に、お預かり中の様子をお伝えします。<br>気になることがあればお気軽にご相談ください。<br>ご利用内容を確認後、お会計をしてお引き渡しいたします。<br>次回のご利用についてもご案内します。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand-row">
+        <img class="site-footer__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+        <div class="site-footer__sns">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/images/common/instagram.png" alt="">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/images/common/facebook.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <address class="site-footer__info">
+        <span>〒123-4567</span>
+        <span>名古屋市中村区見本町1-2-3 デザインビル4F</span>
+        <span>TEL　052-000-0000</span>
+        <span>OPEN　10:00-18:00</span>
+        <span>CLOSE　水曜日</span>
+      </address>
+
+      <div class="site-footer__map" aria-label="店舗周辺地図">
+        <iframe
+          title="mellow map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4267414097812!2d136.87934821744383!3d35.17091500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1783359905676!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+
+      <a class="button site-footer__reservation" href="reservation.html">ご予約</a>
+
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="reservation.html">Reservation</a>
+      </nav>
+
+      <p class="site-footer__copyright">© 2026 mellow. All Rights Reserved.</p>
+      <p class="site-footer__notice">
+        ※本サイトはWebデザイン学習・ポートフォリオ用に制作した架空サイトです。<br>
+        掲載内容は実在の店舗・サービスとは関係ありません。
+      </p>
+    </div>
+  </footer>
+
+  <a class="fixed-cta" href="reservation.html" aria-label="ご予約ページへ">
+    <img class="fixed-cta__icon" src="assets/images/common/fixed-cta-calendar-icon.png" alt="" aria-hidden="true">
+    <span>予約</span>
+  </a>
+
+  <a class="fixed-online-store" href="#" aria-label="Online storeへ">
+    <img class="fixed-online-store__icon" src="assets/images/common/onlinestore_logo.png" alt="" aria-hidden="true">
+    <span>Online<br>store</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

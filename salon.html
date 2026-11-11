@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon | mellow Pet Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="site-header__logo-link" href="index.html" aria-label="mellow トップページ">
+        <img class="site-header__logo" src="assets/images/common/mellow_logo_v2.png" alt="mellow">
+      </a>
+
+      <nav class="site-header__nav" aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="reservation.html">Reservation</a>
+      </nav>
+
+      <button class="hamburger-button" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+      </button>
+    </header>
+
+    <div class="sp-menu" id="sp-menu" aria-hidden="true">
+      <div class="sp-menu__inner">
+        <div class="sp-menu__header">
+          <a href="index.html" aria-label="mellow トップページ">
+            <img class="sp-menu__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          </a>
+          <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">×</button>
+        </div>
+        <nav class="sp-menu__nav" aria-label="スマートフォンナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a class="sp-menu__reservation" href="reservation.html">Reservation</a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero hero--page hero--salon" aria-label="Salon">
+        <h1 class="hero__title">Salon</h1>
+      </section>
+
+      <section class="section section--salon-intro" aria-labelledby="salon-intro-title">
+        <div class="section__inner salon-intro">
+          <div class="section-title">
+            <p class="section-title__en">Trimming salon</p>
+            <h2 class="section-title__jp" id="salon-intro-title">トリミングサロン</h2>
+          </div>
+          <div class="salon-intro__layout">
+            <div class="salon-intro__text">
+              <p>mellowのトリミングでは、<br>ワンちゃんの毛質や肌の状態、<br>その日の体調や性格に合わせた<br>やさしいケアを大切にしています。</p>
+              <p>シャンプー、グルーミング、<br>トリミングなどの基本コースに加えて、<br>肉球ケアや保湿ケアなどのオプション、<br>部分的なお手入れに便利な単品メニューも<br>ご用意しています。</p>
+              <p>きれいに整えることはもちろん、<br>ワンちゃんができるだけリラックスして過ごせるよう、<br>一頭一頭のペースに寄り添いながら<br>丁寧に施術します。</p>
+            </div>
+            <picture class="salon-intro__picture">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_illust.png">
+              <img class="salon-intro__image" src="assets/images/sp/salon/Salon_illust.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--course" aria-labelledby="course-title">
+        <div class="section__inner">
+          <div class="section-title section-title--center">
+            <p class="section-title__en">Course</p>
+            <h2 class="section-title__jp" id="course-title">コース</h2>
+          </div>
+          <div class="course-list">
+            <article class="course-card">
+              <picture class="course-card__picture">
+                <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_course_01.png">
+                <img class="course-card__image" src="assets/images/sp/salon/Salon_course_01.png" alt="">
+              </picture>
+              <div class="course-card__body">
+                <p class="course-card__number">Course 01</p>
+                <h3 class="course-card__title">シャンプーコース</h3>
+                <p class="course-card__text">皮膚や被毛の状態に合わせて、やさしく洗い上げる基本のケアコースです。汚れやにおいをすっきり整え、清潔で心地よい状態へ導きます。</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <picture class="course-card__picture">
+                <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_course_02.png">
+                <img class="course-card__image" src="assets/images/sp/salon/Salon_course_02.png" alt="">
+              </picture>
+              <div class="course-card__body">
+                <p class="course-card__number">Course 02</p>
+                <h3 class="course-card__title">グルーミングコース</h3>
+                <p class="course-card__text">シャンプーに加えて、爪切り・耳そうじ・足裏ケアなどを行う身だしなみのためのコースです。日々を快適に過ごせるよう、細かな部分まで丁寧に整えます。</p>
+              </div>
+            </article>
+            <article class="course-card">
+              <picture class="course-card__picture">
+                <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_course_03.png">
+                <img class="course-card__image" src="assets/images/sp/salon/Salon_course_03.png" alt="">
+              </picture>
+              <div class="course-card__body">
+                <p class="course-card__number">Course 03</p>
+                <h3 class="course-card__title">トリミングコース</h3>
+                <p class="course-card__text">シャンプーとグルーミングに加えて、犬種や毛質に合わせたカットを行うコースです。可愛らしさを引き出しながら、暮らしやすさにも配慮して仕上げます。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--price" aria-labelledby="price-title">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">Price</p>
+            <h2 class="section-title__jp" id="price-title">料金</h2>
+          </div>
+          <div class="price-table-wrap" aria-label="Salon料金表">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th scope="col">犬種</th>
+                  <th scope="col">シャンプー</th>
+                  <th scope="col">グルーミング</th>
+                  <th scope="col">トリミング</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">ピンシャー</th><td>¥3,100</td><td>¥4,300</td><td>−</td></tr>
+                <tr><th scope="row">イタグレ</th><td>¥3,100</td><td>¥4,300</td><td>−</td></tr>
+                <tr><th scope="row">チワワ（スムース）</th><td>¥3,300</td><td>¥4,500</td><td>−</td></tr>
+                <tr><th scope="row">チワワ（ロング）</th><td>¥3,500</td><td>¥4,800</td><td>¥5,800</td></tr>
+                <tr><th scope="row">パピヨン</th><td>¥3,600</td><td>¥4,900</td><td>¥5,900</td></tr>
+                <tr><th scope="row">M.ダックス（スムース）</th><td>¥3,400</td><td>¥4,600</td><td>¥5,600</td></tr>
+                <tr><th scope="row">M.ダックス（ロング）</th><td>¥3,700</td><td>¥5,000</td><td>¥6,000</td></tr>
+                <tr><th scope="row">ジャックラッセル</th><td>¥3,800</td><td>¥5,100</td><td>¥6,100</td></tr>
+                <tr><th scope="row">パグ・フレンチブル</th><td>¥3,900</td><td>¥5,200</td><td>¥6,200</td></tr>
+                <tr><th scope="row">ヨークシャテリア</th><td>¥4,000</td><td>¥5,400</td><td>¥6,800</td></tr>
+                <tr><th scope="row">ポメラニアン</th><td>¥4,200</td><td>¥5,600</td><td>¥7,000</td></tr>
+                <tr><th scope="row">ペキニーズ</th><td>¥4,300</td><td>¥5,700</td><td>¥7,100</td></tr>
+                <tr><th scope="row">マルチーズ</th><td>¥4,400</td><td>¥5,800</td><td>¥7,200</td></tr>
+                <tr><th scope="row">シーズー</th><td>¥4,500</td><td>¥5,900</td><td>¥7,400</td></tr>
+                <tr><th scope="row">トイプードル</th><td>¥4,800</td><td>¥6,300</td><td>¥8,000</td></tr>
+                <tr><th scope="row">ビションフリーゼ</th><td>¥5,000</td><td>¥6,600</td><td>¥8,500</td></tr>
+                <tr><th scope="row">M.シュナウザー</th><td>¥4,700</td><td>¥6,200</td><td>¥8,000</td></tr>
+                <tr><th scope="row">ウエスティー</th><td>¥4,600</td><td>¥6,100</td><td>¥7,900</td></tr>
+                <tr><th scope="row">キャバリア</th><td>¥4,500</td><td>¥5,900</td><td>¥7,300</td></tr>
+                <tr><th scope="row">ビーグル</th><td>¥4,300</td><td>¥5,600</td><td>¥6,800</td></tr>
+                <tr><th scope="row">柴犬</th><td>¥4,800</td><td>¥6,200</td><td>¥7,500</td></tr>
+                <tr><th scope="row">コーギー</th><td>¥4,900</td><td>¥6,300</td><td>¥7,600</td></tr>
+                <tr><th scope="row">A.Eコッカー</th><td>¥5,200</td><td>¥6,800</td><td>¥8,800</td></tr>
+                <tr><th scope="row">スピッツシェルティ</th><td>¥5,300</td><td>¥6,900</td><td>¥8,900</td></tr>
+                <tr><th scope="row">ボーダーコリー</th><td>¥5,800</td><td>¥7,400</td><td>¥9,500</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--options" aria-labelledby="options-title">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">Options</p>
+            <h2 class="section-title__jp" id="options-title">オプション</h2>
+          </div>
+          <div class="menu-list">
+            <section class="menu-group" aria-labelledby="option-1-title">
+              <h3 class="menu-group__title" id="option-1-title">スキンケアコース</h3>
+              <div class="menu-row"><span>保湿シャンプー＋肉球ケア</span><span>¥1,650</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="option-2-title">
+              <h3 class="menu-group__title" id="option-2-title">ハーブパック</h3>
+              <div class="menu-row"><span>被毛とお肌をやさしく整えるパックケア</span><span>¥2,200</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="option-3-title">
+              <h3 class="menu-group__title" id="option-3-title">マイクロバブルシャワー</h3>
+              <div class="menu-row"><span>毛穴汚れをすっきり落とすやさしい温浴ケア</span><span>¥1,100</span></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alacarte" aria-labelledby="alacarte-title">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">A la carte</p>
+            <h2 class="section-title__jp" id="alacarte-title">単品メニュー</h2>
+          </div>
+          <div class="menu-list menu-list--plain">
+            <section class="menu-group" aria-labelledby="alacarte-1-title">
+              <h3 class="menu-group__title" id="alacarte-1-title">爪切り</h3>
+              <div class="menu-row"><span>伸びた爪を安全に整えます</span><span>¥770</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-2-title">
+              <h3 class="menu-group__title" id="alacarte-2-title">耳そうじ</h3>
+              <div class="menu-row"><span>耳の汚れをやさしくケアします</span><span>¥770</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-3-title">
+              <h3 class="menu-group__title" id="alacarte-3-title">足裏バリカン</h3>
+              <div class="menu-row"><span>足裏の毛をすっきり整えます</span><span>¥880</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-4-title">
+              <h3 class="menu-group__title" id="alacarte-4-title">肛門腺しぼり</h3>
+              <div class="menu-row"><span>お尻まわりを清潔にケアします</span><span>¥880</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-5-title">
+              <h3 class="menu-group__title" id="alacarte-5-title">お顔カット</h3>
+              <div class="menu-row"><span>目元や口まわりを整えます</span><span>¥1,100</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-6-title">
+              <h3 class="menu-group__title" id="alacarte-6-title">部分カット</h3>
+              <div class="menu-row"><span>気になる部分だけを整えます</span><span>¥1,100</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-7-title">
+              <h3 class="menu-group__title" id="alacarte-7-title">肉球ケア</h3>
+              <div class="menu-row"><span>乾燥しやすい肉球を保湿します</span><span>¥880</span></div>
+            </section>
+            <section class="menu-group" aria-labelledby="alacarte-8-title">
+              <h3 class="menu-group__title" id="alacarte-8-title">歯磨き</h3>
+              <div class="menu-row"><span>お口まわりをやさしくケアします</span><span>¥880</span></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--flow" aria-labelledby="flow-title">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">Flow</p>
+            <h2 class="section-title__jp" id="flow-title">ご利用の流れ</h2>
+          </div>
+          <div class="flow-list">
+            <div class="flow-list__axis" aria-hidden="true">
+              <span class="flow-list__arrow flow-list__arrow--01"></span>
+              <span class="flow-list__arrow flow-list__arrow--02"></span>
+              <span class="flow-list__arrow flow-list__arrow--03"></span>
+              <span class="flow-list__arrow flow-list__arrow--04"></span>
+              <span class="flow-list__arrow flow-list__arrow--05"></span>
+            </div>
+            <article class="flow-item">
+              <div class="flow-item__icon-wrap">
+                <picture>
+                  <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_flow01.png">
+                  <img class="flow-item__icon" src="assets/images/sp/salon/Salon_flow01.png" alt="">
+                </picture>
+              </div>
+              <div class="flow-item__body">
+                <p class="flow-item__number">01</p>
+                <h3 class="flow-item__title">ご予約</h3>
+                <p class="flow-item__text">Webまたはお電話にて、ご希望の日時とコースをお選びください。初めての方もお気軽にご相談いただけます。ご希望のスタイルや気になることがあれば、事前にお伝えください。</p>
+              </div>
+            </article>
+            <article class="flow-item">
+              <div class="flow-item__icon-wrap">
+                <picture>
+                  <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_flow02_v2.png">
+                  <img class="flow-item__icon" src="assets/images/sp/salon/Salon_flow02_v2.png" alt="">
+                </picture>
+              </div>
+              <div class="flow-item__body">
+                <p class="flow-item__number">02</p>
+                <h3 class="flow-item__title">ご来店・受付</h3>
+                <p class="flow-item__text">ワンちゃんの体調や性格、気になることを確認します。普段の様子や苦手なこともお聞かせください。安心して過ごせるよう、無理のないペースでお預かりします。</p>
+              </div>
+            </article>
+            <article class="flow-item">
+              <div class="flow-item__icon-wrap">
+                <picture>
+                  <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_flow03_v2.png">
+                  <img class="flow-item__icon" src="assets/images/sp/salon/Salon_flow03_v2.png" alt="">
+                </picture>
+              </div>
+              <div class="flow-item__body">
+                <p class="flow-item__number">03</p>
+                <h3 class="flow-item__title">カウンセリング</h3>
+                <p class="flow-item__text">毛質やお肌の状態を見ながら、仕上がりのイメージを共有します。ワンちゃんに合ったケアをご提案します。お手入れのしやすさを考えながら、一緒に仕上がりを決めていきます。</p>
+              </div>
+            </article>
+            <article class="flow-item">
+              <div class="flow-item__icon-wrap">
+                <picture>
+                  <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_flow04.png">
+                  <img class="flow-item__icon" src="assets/images/sp/salon/Salon_flow04.png" alt="">
+                </picture>
+              </div>
+              <div class="flow-item__body">
+                <p class="flow-item__number">04</p>
+                <h3 class="flow-item__title">トリミング</h3>
+                <p class="flow-item__text">シャンプーやカットなど、一頭一頭のペースに合わせてやさしく丁寧に施術します。途中で様子を見ながら、できるだけ負担の少ないケアを心がけます。</p>
+              </div>
+            </article>
+            <article class="flow-item">
+              <div class="flow-item__icon-wrap">
+                <picture>
+                  <source media="(min-width: 48em)" srcset="assets/images/pc/salon/Salon_flow05.png">
+                  <img class="flow-item__icon" src="assets/images/sp/salon/Salon_flow05.png" alt="">
+                </picture>
+              </div>
+              <div class="flow-item__body">
+                <p class="flow-item__number">05</p>
+                <h3 class="flow-item__title">お迎え・お会計</h3>
+                <p class="flow-item__text">仕上がりをご確認いただき、ご自宅でのケア方法もお伝えします。気になることがあればお気軽にご相談ください。次回のご来店目安も、ワンちゃんに合わせてご案内します。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--white">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand-row">
+          <img class="site-footer__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          <div class="site-footer__sns">
+            <a href="#" aria-label="Instagram">
+              <img src="assets/images/common/instagram.png" alt="">
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="assets/images/common/facebook.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <address class="site-footer__info">
+          <span>〒123-4567</span>
+          <span>名古屋市中村区見本町1-2-3 デザインビル4F</span>
+          <span>TEL　052-000-0000</span>
+          <span>OPEN　10:00-18:00</span>
+          <span>CLOSE　水曜日</span>
+        </address>
+
+        <div class="site-footer__map" aria-label="店舗周辺地図">
+          <iframe
+            title="mellow map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4267414097812!2d136.87934821744383!3d35.17091500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1783359905676!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+
+        <a class="button site-footer__reservation" href="reservation.html">ご予約</a>
+
+        <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a href="reservation.html">Reservation</a>
+        </nav>
+
+        <p class="site-footer__copyright">© 2026 mellow. All Rights Reserved.</p>
+        <p class="site-footer__notice">
+          ※本サイトはWebデザイン学習・ポートフォリオ用に制作した架空サイトです。<br>
+          掲載内容は実在の店舗・サービスとは関係ありません。
+        </p>
+      </div>
+    </footer>
+
+    <a class="fixed-cta" href="reservation.html" aria-label="ご予約ページへ">
+      <img class="fixed-cta__icon" src="assets/images/common/fixed-cta-calendar-icon.png" alt="" aria-hidden="true">
+      <span>予約</span>
+    </a>
+
+    <a class="fixed-online-store" href="#" aria-label="Online storeへ">
+      <img class="fixed-online-store__icon" src="assets/images/common/onlinestore_logo.png" alt="" aria-hidden="true">
+      <span>Online<br>store</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

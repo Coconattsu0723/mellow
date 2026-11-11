@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mellow | Pet Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="site-header__logo-link" href="index.html" aria-label="mellow トップページ">
+        <img class="site-header__logo" src="assets/images/common/mellow_logo_v2.png" alt="mellow">
+      </a>
+
+      <nav class="site-header__nav" aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="reservation.html">Reservation</a>
+      </nav>
+
+      <button class="hamburger-button" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+      </button>
+    </header>
+
+    <div class="sp-menu" id="sp-menu" aria-hidden="true">
+      <div class="sp-menu__inner">
+        <div class="sp-menu__header">
+          <a href="index.html" aria-label="mellow トップページ">
+            <img class="sp-menu__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          </a>
+          <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">×</button>
+        </div>
+        <nav class="sp-menu__nav" aria-label="スマートフォンナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a class="sp-menu__reservation" href="reservation.html">Reservation</a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero hero--top" aria-label="mellow">
+        <h1 class="hero__title">Home, Walk, and Us</h1>
+      </section>
+
+      <section class="section section--about" id="about">
+        <div class="section__inner about-top">
+          <div class="section-title">
+            <p class="section-title__en">About Us</p>
+            <h2 class="section-title__jp">mellowについて</h2>
+          </div>
+          <div class="about-top__content">
+            <div class="about-top__text">
+              <p>mellowは、ワンちゃんが家にいるように穏やかにくつろげるペットサロンです。</p>
+              <p>いつものお散歩の途中に立ち寄るような、気軽で心地よい時間を大切にしています。</p>
+              <p>Home, Walk, and Us.<br>ワンちゃんとご家族の日常に、そっと寄り添います。</p>
+              <a class="button button--small" href="about.html">View more</a>
+            </div>
+            <picture class="about-top__picture">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/top/top_about_us_v2.png">
+              <img class="about-top__image" src="assets/images/sp/top/top_about_us_v2.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--service" id="service">
+        <div class="section__inner">
+          <div class="section-title section-title--center">
+            <p class="section-title__en">Service</p>
+            <h2 class="section-title__jp">サービス</h2>
+          </div>
+          <div class="service-list">
+            <a class="service-card" href="salon.html">
+              <picture class="service-card__picture">
+                <source media="(min-width: 48em)" srcset="assets/images/pc/top/gallery.png">
+                <img class="service-card__image" src="assets/images/sp/top/gallery.png" alt="">
+              </picture>
+              <h3 class="service-card__title">Salon</h3>
+              <p class="service-card__text">毛質や肌の状態に合わせて、ワンちゃんを少しずつ丁寧にケアします。基本コースから単品メニューまで、ご希望に合わせて提案いたします。</p>
+            </a>
+            <a class="service-card" href="hotel.html">
+              <picture class="service-card__picture">
+                <source media="(min-width: 48em)" srcset="assets/images/pc/top/service_hotel.png">
+                <img class="service-card__image" src="assets/images/sp/top/service_hotel.png" alt="">
+              </picture>
+              <h3 class="service-card__title">Hotel</h3>
+              <p class="service-card__text">少しのお出かけからお泊まりまで、ワンちゃんが安心して過ごせるよう、ゆっくり見守るお預かりサービスです。穏やかに過ごせる時間を大切にしています。</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--shop" id="shop">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">Online shop</p>
+            <h2 class="section-title__jp">オンラインショップ</h2>
+          </div>
+          <p class="shop-text">お店で使用しているシャンプーやお菓子を、ご自宅でもお気軽にお楽しみいただけるようになりました。</p>
+          <a class="button" href="#">Go to store</a>
+        </div>
+      </section>
+
+      <section class="section section--gallery" id="gallery">
+        <div class="section__inner">
+          <div class="gallery-heading">
+            <div class="section-title">
+              <p class="section-title__en">Style Gallery</p>
+              <h2 class="section-title__jp">仕上がりギャラリー</h2>
+            </div>
+            <div class="gallery-controls" aria-label="ギャラリー操作">
+              <button class="gallery-control" type="button" data-gallery-prev aria-label="前の写真を表示">‹</button>
+              <button class="gallery-control" type="button" data-gallery-next aria-label="次の写真を表示">›</button>
+            </div>
+          </div>
+          <div class="gallery-list" aria-label="仕上がりギャラリー" data-gallery-slider>
+            <picture class="gallery-item">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/top/gallery_01.jpg">
+              <img src="assets/images/sp/top/gallery_01.jpg" alt="トリミング後のワンちゃん">
+            </picture>
+            <picture class="gallery-item">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/top/gallery_02.jpg">
+              <img src="assets/images/sp/top/gallery_02.jpg" alt="ふんわり仕上がったワンちゃん">
+            </picture>
+            <picture class="gallery-item">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/top/gallery_03.jpg">
+              <img src="assets/images/sp/top/gallery_03.jpg" alt="サロンで過ごすワンちゃん">
+            </picture>
+            <picture class="gallery-item">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/top/gallery_04.jpg">
+              <img src="assets/images/sp/top/gallery_04.jpg" alt="お手入れ後のワンちゃん">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--qa" id="qa">
+        <div class="section__inner">
+          <div class="section-title">
+            <p class="section-title__en">Q &amp; A</p>
+            <h2 class="section-title__jp">よくあるご質問</h2>
+          </div>
+          <div class="qa-list">
+            <div class="qa-item">
+              <button class="qa-item__question" type="button" aria-expanded="false">
+                <span>Q　何日前から予約可能ですか？</span>
+                <span class="qa-item__icon">+</span>
+              </button>
+              <div class="qa-item__answer" hidden>
+                <p>ご予約はご希望日の1ヶ月前から承っております。土日祝日は混み合いやすいため、お早めのご予約をおすすめしています。</p>
+              </div>
+            </div>
+            <div class="qa-item is-open">
+              <button class="qa-item__question" type="button" aria-expanded="true">
+                <span>Q　ホテルを利用する場合、必要なものはありますか？</span>
+                <span class="qa-item__icon">−</span>
+              </button>
+              <div class="qa-item__answer">
+                <p>いつものごはんやおやつ、お気に入りのおもちゃやブランケットなどをお持ちください。<br>初回ご利用時は、ワクチン接種証明書のご提示をお願いします。</p>
+              </div>
+            </div>
+            <div class="qa-item">
+              <button class="qa-item__question" type="button" aria-expanded="false">
+                <span>Q　毛の長さによって料金が変わりますか？</span>
+                <span class="qa-item__icon">+</span>
+              </button>
+              <div class="qa-item__answer" hidden>
+                <p>毛の長さや毛量、もつれの状態によって、追加料金をいただく場合がございます。ご来店時にワンちゃんの状態を確認し、事前にご案内いたします。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand-row">
+          <img class="site-footer__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          <div class="site-footer__sns">
+            <a href="#" aria-label="Instagram">
+              <img src="assets/images/common/instagram.png" alt="">
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="assets/images/common/facebook.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <address class="site-footer__info">
+          <span>〒123-4567</span>
+          <span>名古屋市中村区見本町1-2-3 デザインビル4F</span>
+          <span>TEL　052-000-0000</span>
+          <span>OPEN　10:00-18:00</span>
+          <span>CLOSE　水曜日</span>
+        </address>
+
+        <div class="site-footer__map" aria-label="店舗周辺地図">
+          <iframe
+            title="mellow map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4267414097812!2d136.87934821744383!3d35.17091500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1783359905676!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+
+        <a class="button site-footer__reservation" href="reservation.html">ご予約</a>
+
+        <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a href="reservation.html">Reservation</a>
+        </nav>
+
+        <p class="site-footer__copyright">© 2026 mellow. All Rights Reserved.</p>
+        <p class="site-footer__notice">
+          ※本サイトはWebデザイン学習・ポートフォリオ用に制作した架空サイトです。<br>
+          掲載内容は実在の店舗・サービスとは関係ありません。
+        </p>
+      </div>
+    </footer>
+
+    <a class="fixed-cta" href="reservation.html" aria-label="ご予約ページへ">
+      <img class="fixed-cta__icon" src="assets/images/common/fixed-cta-calendar-icon.png" alt="" aria-hidden="true">
+      <span>予約</span>
+    </a>
+
+    <a class="fixed-online-store" href="#" aria-label="Online storeへ">
+      <img class="fixed-online-store__icon" src="assets/images/common/onlinestore_logo.png" alt="" aria-hidden="true">
+      <span>Online<br>store</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation | mellow Pet Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" aria-label="サイトヘッダー">
+    <a class="site-header__logo-link" href="index.html" aria-label="mellow トップページ">
+      <img class="site-header__logo" src="assets/images/common/mellow_logo_v2.png" alt="mellow">
+    </a>
+    <nav class="site-header__nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="salon.html">Salon</a>
+      <a href="hotel.html">Hotel</a>
+      <a href="reservation.html">Reservation</a>
+    </nav>
+    <button class="hamburger-button" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+      <span class="hamburger-button__line"></span>
+      <span class="hamburger-button__line"></span>
+      <span class="hamburger-button__line"></span>
+    </button>
+  </header>
+
+  <div class="sp-menu" id="sp-menu" aria-hidden="true">
+    <div class="sp-menu__inner">
+      <div class="sp-menu__header">
+        <a href="index.html" aria-label="mellow トップページ">
+          <img class="sp-menu__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+        </a>
+        <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">×</button>
+      </div>
+      <nav class="sp-menu__nav" aria-label="スマートフォンナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a class="sp-menu__reservation" href="reservation.html">Reservation</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero hero--page hero--reservation" aria-label="Reservation">
+      <h1 class="hero__title">Reservation</h1>
+    </section>
+
+    <section class="section section--reservation" aria-labelledby="reservation-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title section-title--center">
+          <p class="section-title__en" id="reservation-title">Web予約</p>
+        </div>
+        <div class="reservation-lead">
+          <p>ご予約内容を入力して送信ボタンを<span class="reservation-lead__nowrap">押してください。</span></p>
+          <p>担当者が確認後、2〜3営業日以内に<span class="reservation-lead__nowrap">ご連絡いたします。</span></p>
+        </div>
+
+        <form class="reservation-form" action="reservation-complete.html" method="get">
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-name">お名前</label>
+            <input class="reservation-form__input" type="text" id="reservation-name" name="name" placeholder="山田 花子">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-tel">電話番号</label>
+            <input class="reservation-form__input" type="tel" id="reservation-tel" name="tel" placeholder="052-000-0000">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-postal">郵便番号</label>
+            <input class="reservation-form__input" type="text" id="reservation-postal" name="postal" placeholder="123-4567">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-address">住所</label>
+            <input class="reservation-form__input" type="text" id="reservation-address" name="address" placeholder="名古屋市中村区見本町 1-2-3">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-email">メールアドレス</label>
+            <input class="reservation-form__input" type="email" id="reservation-email" name="email" placeholder="example@mellow.jp">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="reservation-date">ご予約希望日</label>
+            <input class="reservation-form__input" type="date" id="reservation-date" name="date">
+          </div>
+
+          <div class="reservation-form__field reservation-form__field--service">
+            <p class="reservation-form__label" id="reservation-service-label">ご希望サービス</p>
+            <div class="service-choice" role="radiogroup" aria-labelledby="reservation-service-label">
+              <label class="service-choice__item">
+                <input type="radio" name="service" value="trimming">
+                <span>トリミング</span>
+              </label>
+              <label class="service-choice__item">
+                <input type="radio" name="service" value="hotel">
+                <span>ホテル</span>
+              </label>
+              <label class="service-choice__item">
+                <input type="radio" name="service" value="consultation">
+                <span>その他ご相談</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="dog-name">ワンちゃんのお名前</label>
+            <input class="reservation-form__input" type="text" id="dog-name" name="dog-name" placeholder="moco">
+          </div>
+
+          <div class="reservation-form__field">
+            <label class="reservation-form__label" for="dog-breed">犬種</label>
+            <input class="reservation-form__input" type="text" id="dog-breed" name="dog-breed" placeholder="トイプードル">
+          </div>
+
+          <div class="reservation-form__submit">
+            <button class="button reservation-submit" type="submit">送信　→</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--telephone-reservation" aria-labelledby="telephone-reservation-title">
+      <div class="section__inner section__inner--comfortable">
+        <div class="section-title section-title--center">
+          <p class="section-title__en" id="telephone-reservation-title">お電話でのご予約</p>
+        </div>
+        <p class="telephone-reservation__text">お電話でのお問い合わせやご予約も承っております。<br>お気軽にお問い合わせください。</p>
+        <a class="telephone-reservation__card" href="#telephone-reservation-title" aria-label="電話番号 052-000-0000">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/pc/reservation/telephone.png">
+            <img class="telephone-reservation__icon" src="assets/images/sp/reservation/telephone.png" alt="">
+          </picture>
+          <span>052-000-0000</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand-row">
+        <img class="site-footer__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+        <div class="site-footer__sns">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/images/common/instagram.png" alt="">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/images/common/facebook.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <address class="site-footer__info">
+        <span>〒123-4567</span>
+        <span>名古屋市中村区見本町1-2-3 デザインビル4F</span>
+        <span>TEL　052-000-0000</span>
+        <span>OPEN　10:00-18:00</span>
+        <span>CLOSE　水曜日</span>
+      </address>
+
+      <div class="site-footer__map" aria-label="店舗周辺地図">
+        <iframe
+          title="mellow map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4267414097812!2d136.87934821744383!3d35.17091500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1783359905676!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+
+      <a class="button site-footer__reservation" href="reservation.html">ご予約</a>
+
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="reservation.html">Reservation</a>
+      </nav>
+
+      <p class="site-footer__copyright">© 2026 mellow. All Rights Reserved.</p>
+      <p class="site-footer__notice">
+        ※本サイトはWebデザイン学習・ポートフォリオ用に制作した架空サイトです。<br>
+        掲載内容は実在の店舗・サービスとは関係ありません。
+      </p>
+    </div>
+  </footer>
+
+  <a class="fixed-cta fixed-cta--reservation" href="#reservation-title" aria-label="予約フォームへ">
+    <img class="fixed-cta__icon" src="assets/images/common/fixed-cta-calendar-icon.png" alt="" aria-hidden="true">
+    <span>予約</span>
+  </a>
+
+  <a class="fixed-online-store" href="#" aria-label="Online storeへ">
+    <img class="fixed-online-store__icon" src="assets/images/common/onlinestore_logo.png" alt="" aria-hidden="true">
+    <span>Online<br>store</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

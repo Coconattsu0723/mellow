@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | mellow Pet Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="site-header__logo-link" href="index.html" aria-label="mellow トップページ">
+        <img class="site-header__logo" src="assets/images/common/mellow_logo_v2.png" alt="mellow">
+      </a>
+
+      <nav class="site-header__nav" aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="salon.html">Salon</a>
+        <a href="hotel.html">Hotel</a>
+        <a href="reservation.html">Reservation</a>
+      </nav>
+
+      <button class="hamburger-button" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+      </button>
+    </header>
+
+    <div class="sp-menu" id="sp-menu" aria-hidden="true">
+      <div class="sp-menu__inner">
+        <div class="sp-menu__header">
+          <a href="index.html" aria-label="mellow トップページ">
+            <img class="sp-menu__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          </a>
+          <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">×</button>
+        </div>
+        <nav class="sp-menu__nav" aria-label="スマートフォンナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a class="sp-menu__reservation" href="reservation.html">Reservation</a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero hero--page hero--about" aria-label="About Us">
+        <h1 class="hero__title">About Us</h1>
+      </section>
+
+      <section class="section section--about-page" aria-labelledby="about-title">
+        <div class="section__inner about-page">
+          <div class="section-title">
+            <p class="section-title__en">About Us</p>
+            <h2 class="section-title__jp" id="about-title">mellowについて</h2>
+          </div>
+
+          <div class="about-page__layout">
+            <div class="about-page__text">
+              <p>mellowは、<br>ワンちゃんとご家族が安心して通える、<br>穏やかで心地よいペットサロンを目指しています。</p>
+              <p>サロンで過ごす時間は、<br>ワンちゃんにとって<br>少し緊張するものかもしれません。</p>
+              <p>だからこそmellowでは、<br>無理に急がせるのではなく、<br>一頭一頭の性格や<br>その日の様子に合わせて、<br>できるだけ自然体で過ごせる<br>空間づくりを大切にしています。</p>
+              <p>きれいに整えることはもちろん、<br>「ここなら大丈夫」と<br>感じてもらえること。</p>
+              <p>そして、ご家族にも<br>安心して預けていただけること。</p>
+              <p>いつものお散歩の途中に<br>ふらっと立ち寄れるような、<br>家のようにくつろげる場所でありたい。</p>
+              <p>そんな想いを込めて、<br>mellowという名前をつけました。</p>
+              <p>Home, Walk, and Us.</p>
+              <p>おうちで過ごす時間、<br>お散歩の時間、<br>そしてmellowで過ごす時間。</p>
+              <p>ワンちゃんとご家族の日常に、<br>そっと寄り添う存在でありたいと考えています。</p>
+            </div>
+
+            <picture class="about-page__picture">
+              <source media="(min-width: 48em)" srcset="assets/images/pc/about/AboutUs_illust_pc.png">
+              <img class="about-page__image" src="assets/images/sp/about/AboutUs_illust_sp.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand-row">
+          <img class="site-footer__logo" src="assets/images/common/mellow_logo_brawn_v2.png" alt="mellow">
+          <div class="site-footer__sns">
+            <a href="#" aria-label="Instagram">
+              <img src="assets/images/common/instagram.png" alt="">
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="assets/images/common/facebook.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <address class="site-footer__info">
+          <span>〒123-4567</span>
+          <span>名古屋市中村区見本町1-2-3 デザインビル4F</span>
+          <span>TEL　052-000-0000</span>
+          <span>OPEN　10:00-18:00</span>
+          <span>CLOSE　水曜日</span>
+        </address>
+
+        <div class="site-footer__map" aria-label="店舗周辺地図">
+          <iframe
+            title="mellow map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4267414097812!2d136.87934821744383!3d35.17091500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1783359905676!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+
+        <a class="button site-footer__reservation" href="reservation.html">ご予約</a>
+
+        <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="salon.html">Salon</a>
+          <a href="hotel.html">Hotel</a>
+          <a href="reservation.html">Reservation</a>
+        </nav>
+
+        <p class="site-footer__copyright">© 2026 mellow. All Rights Reserved.</p>
+        <p class="site-footer__notice">
+          ※本サイトはWebデザイン学習・ポートフォリオ用に制作した架空サイトです。<br>
+          掲載内容は実在の店舗・サービスとは関係ありません。
+        </p>
+      </div>
+    </footer>
+
+    <a class="fixed-cta" href="reservation.html" aria-label="ご予約ページへ">
+      <img class="fixed-cta__icon" src="assets/images/common/fixed-cta-calendar-icon.png" alt="" aria-hidden="true">
+      <span>予約</span>
+    </a>
+
+    <a class="fixed-online-store" href="#" aria-label="Online storeへ">
+      <img class="fixed-online-store__icon" src="assets/images/common/onlinestore_logo.png" alt="" aria-hidden="true">
+      <span>Online<br>store</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
